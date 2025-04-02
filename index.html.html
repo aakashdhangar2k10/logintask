@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="./Card.png" alt="Learning Image">
+        </div>
+        <div class="right-section">
+            <img src="./Group 2.png" alt="Group Image" class="group-image">
+            <img src="./logo.png" alt="Logo" class="logo">
+            <h2>Welcome Back</h2>
+            <br>
+            <p>Please login to your account</p>
+            <br>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group password-container">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <span class="eye-icon" onclick="togglePassword()"><img src="icon/eye_hide.png" id="eyeicon"></span>
+                </div>
+                <a href="#" class="forgot-password">Forgot password?</a>
+                <br>
+                <button type="submit">Submit</button>
+
+            </form>
+            <img src="./Subtract.png" alt="" class="subtract-img">
+            <div class="signup-link">Don't have an account? <a href="#">Sign Up</a></div>
+        </div>
+    </div>
+<script src="./login.js"></script>
+</body>
+
+</html>
