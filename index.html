@@ -2,43 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
     <title>Login</title>
-
+    
 </head>
 
 <body>
     <div class="container">
+        <!-- LEFT SECTION -->
         <div class="left-section">
-            <img src="./Card.png" alt="Learning Image">
+            <div class="card">
+                <div class="sparkle">
+                    <img src="./Shapes.png" alt="Decorative Shape" />
+                </div>
+                <div class="card_top_heading">
+                    <h1>Simplify learning with <br> our platform.</h1>
+                    <div class="underline-curve">
+                    <img src="./Vector 131.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="card_top_heading">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        .</p>
+                </div>
+                <img src="./Group 1000003353.png" alt="Smiling kid with book" />
+
+                <!-- Decorative Stars -->
+                <div class="decorations">
+                    <img src="./Vector_star.png" alt="Star" class="star top-left" />
+                    <img src="./Vector_star.png" alt="Star" class="star mid-right" />
+                    <img src="./Star 1.png" alt="Star" class="star bottom-left" />
+                </div>
+            </div>
         </div>
+
+        <!-- RIGHT SECTION -->
         <div class="right-section">
-            <img src="./Group 2.png" alt="Group Image" class="group-image">
-            <img src="./logo.png" alt="Logo" class="logo">
+            <img src="./Group 2.png" alt="Group Image" class="group-image" />
+            <img src="./logo.png" alt="Logo" class="logo" />
             <h2>Welcome Back</h2>
-            <br>
+            <br />
             <p>Please login to your account</p>
-            <br>
+            <br />
             <form id="loginForm">
                 <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required />
                 </div>
                 <div class="form-group password-container">
-                    <input type="password" id="password" name="password" placeholder="Password" required>
-                    <span class="eye-icon" onclick="togglePassword()"><img src="icon/eye_hide.png" id="eyeicon"></span>
+                    <input type="password" id="password" name="password" placeholder="Password" required />
+                    <span class="eye-icon" onclick="togglePassword()">
+                        <img src="icon/eye_hide.png" id="eyeicon" />
+                    </span>
                 </div>
                 <a href="#" class="forgot-password">Forgot password?</a>
-                <br>
+                <br />
                 <button type="submit">Submit</button>
-
             </form>
-            <img src="./Subtract.png" alt="" class="subtract-img">
-            <div class="signup-link">Don't have an account? <a href="#">Sign Up</a></div>
+            <img src="./Subtract.png" alt="Decoration" class="subtract-img" />
+            <div class="signup-link">
+                Don't have an account? <a href="#">Sign Up</a>
+            </div>
         </div>
     </div>
-<script src="./login.js"></script>
+
+    <script src="./login.js"></script>
 </body>
 
 </html>
