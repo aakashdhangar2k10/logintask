@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
 }
 
 body {
@@ -22,26 +22,80 @@ body {
     display: flex;
     max-width: 1200px;
     width: 90%;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     position: relative;
-
 }
 
 .left-section {
-    width: 45%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-} 
-
-.left-section img {
-    max-width: 100%;
 }
 
+
+
+.card {
+    background: linear-gradient(180deg, #f47216 0%, #f78c2c 100%);
+    border-radius: 20px;
+    padding: 40px 0px 0px 0px;
+    width: 80%;
+    text-align: center;
+    color: white;
+    /* font-family: 'Segoe UI', sans-serif; */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card_top_heading {
+    /* border: 2px solid red; */
+    /* margin-bottom: 10px; */
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.card h1 {
+    font-size: 2em;
+    /* line-height: 1.3; */
+    margin-bottom: 10px;
+    text-align: left;
+}
+.card p{
+    text-align: left;
+}
+
+.card strong {
+    font-weight: bold;
+}
+
+.underline-curve {
+     width: 200px;
+     padding-left: 50px;
+    /*height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px auto 20px;
+    transform: scaleY(0.3); */
+    
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #ffe2d4;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Right Section */
 .right-section {
     width: 45%;
     padding: 40px;
@@ -62,14 +116,15 @@ body {
     width: 200px;
 }
 
+p {
+    color: #777;
+}
+
 .form-group {
     margin-bottom: 20px;
     position: relative;
 }
 
-p{
-    color: #777;
-}
 .form-group input {
     width: 100%;
     padding: 10px;
@@ -89,7 +144,8 @@ p{
     transform: translateY(-50%);
     cursor: pointer;
 }
-.eye-icon img{
+
+.eye-icon img {
     width: 25px;
 }
 
@@ -133,14 +189,74 @@ button {
     z-index: 1;
 }
 
+/* Decorative Elements */
+.sparkle {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-size: contain;
+}
 
+.decorations .star {
+    position: absolute;
+    width: 20px;
+}
+
+.star.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.star.mid-right {
+    top: 160px;
+    right: 30px;
+}
+
+.star.bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.sparkle {
+    position: absolute;
+    top: 0px;
+    /* pull it slightly above card */
+    left: 30%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: auto;
+    z-index: 2;
+}
+
+.sparkle img {
+    width: 100%;
+    height: auto;
+    /* animation: floatSpark 4s ease-in-out infinite; */
+}
+
+/* Optional floating animation */
+@keyframes floatSpark {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0px);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-
-
+    body {
+    
+    background-color: white;
+}
     .container {
         width: 100%;
-        height: 820px;
-;
+        flex-direction: column;
+        height: auto;
     }
 
     .left-section {
@@ -149,28 +265,15 @@ button {
 
     .right-section {
         width: 100%;
-        height: 100%;
         padding: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-        text-align: center;
-        margin: auto;
-    }
-
-    .group-image {
-        width: 200px;
-    }
-
-    .subtract-img {
-        position: absolute;
-        right: -110px;
-        z-index: 1;
+        background-color: white;
     }
 
     .signup-link {
-
         margin-top: 200px;
+    }
+
+    .subtract-img {
+        right: -110px;
     }
 }
