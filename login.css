@@ -14,7 +14,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background-color: #f8f8f8;
 }
 
@@ -50,8 +49,7 @@ body {
 }
 
 .card_top_heading {
-    /* border: 2px solid red; */
-    /* margin-bottom: 10px; */
+   
     width: 80%;
     margin: auto;
     margin-bottom: 10px;
